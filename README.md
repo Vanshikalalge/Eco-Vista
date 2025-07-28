@@ -1,3 +1,3 @@
 # Eco-Vista 
 
-The Major Project , Frontend Developed by Vanshika Lalge.
+The Major Project for college, Frontend Developed by Vanshika Lalge.
