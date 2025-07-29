@@ -2,118 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoVista - Environmental Monitoring</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoVista</title>
   <style>
-    * {
-      box-sizing: border-box;
+    body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
     }
 
-    body {
-      background-color: rgb(210, 244, 136);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .header {
       padding: 20px;
+      color: #084c1e;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #0b5e30;
+    }
+
+    .header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
     }
 
     .container {
-      background: rgb(210, 244, 136);
-      border-radius: 15px;
-      padding: 30px;
-      max-width: 1000px;
       width: 100%;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #205c46;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      color: #2b7a67;
-      margin-bottom: 30px;
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 500px;
+      padding-top: 40px;
     }
 
     .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 50px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
     }
 
-    .feature {
-      background: #57ab7d;
-      border-radius: 10px;
+    .card {
+       background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
       padding: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 200px;
+     transition: background-color 0.3s ease, transform 0.3s ease;  
+    
+ 
     }
 
-    .feature:hover {
-      transform: scale(1.05);
+    .card img {
+      width: 100%;
+      height: 150px;
+      border-radius: 10px; 
+      object-fit: cover;
     }
 
-    .feature img {
-        object-fit: fill;
-      border-radius: 50%;
-      max-width: 90px;
-      height: 90px;
-      margin-bottom: 15px;
+    .card p {
+      margin-top: 10px;
+      font-size: 1em;
     }
-
-    .feature p {
-      font-size: 1.5rem;
-      color: #333;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1rem;
-      }
-    }
+    .card:hover {
+  background-color:#f0e6d2; 
+  transform: translateY(-9px); 
+}
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="header">
     <h1>EcoVista</h1>
-    <h2>Environmental Monitoring & Smart Planning</h2>
+    <p>Environmental Monitoring & Smart Planning</p>
+  </div>
+
+  <div class="container">
     <div class="features">
-      <div class="feature">
+      <div class="card">
         <img src="pollution.jpg" alt="Pollution Visualization" />
         <p>Pollution Visualization</p>
       </div>
-      <div class="feature">
+      <div class="card">
         <img src="tree.jpg" alt="Tree Plantation Need" />
         <p>Tree Plantation Need</p>
       </div>
-      <div class="feature">
+      <div class="card">
         <img src="oxygen.jpg" alt="Oxygen Supply vs Requirement" />
-        <p>Oxygen Supply vs Requirement</p>
+        <p>Oxygen Supply vs<br>Requirement</p>
       </div>
-      <div class="feature">
-        <img src="river.jpg" alt="River & Groundwater Depletion" />
-        <p>River & Groundwater Depletion</p>
+      <div class="card">
+        <img src="river.jpg" alt="Temperature Analysis" />
+        <p>River Analysis</p>
       </div>
-      <div class="feature">
-        <img src="soil.jpg" alt="Soil Health & Degradation Mapping" />
-        <p>Soil Health & Degradation Mapping</p>
+      <div class="card">
+        <img src="soil.jpg" alt="Water Quality Check" />
+        <p>Soil Quality Check</p>
       </div>
-      <div class="feature">
-        <img src="smart city.jpg" alt="Smart City Planning Overlay" />
-        <p>Smart City Planning Overlay</p>
+      <div class="card">
+        <img src="smart city.jpg" alt="Air Purity Level" />
+        <p>Smart City</p>
       </div>
     </div>
   </div>
-
 </body>
 </html>
+
+
+
+
+
