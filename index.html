@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco-Vista</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoVista - Environmental Monitoring</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: rgb(210, 244, 136);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgb(210, 244, 136);
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 1000px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #205c46;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: #2b7a67;
+      margin-bottom: 30px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 50px;
+    }
+
+    .feature {
+      background: #57ab7d;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: scale(1.05);
+    }
+
+    .feature img {
+        object-fit: fill;
+      border-radius: 50%;
+      max-width: 90px;
+      height: 90px;
+      margin-bottom: 15px;
+    }
+
+    .feature p {
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="container">
+    <h1>EcoVista</h1>
+    <h2>Environmental Monitoring & Smart Planning</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="pollution.jpg" alt="Pollution Visualization" />
+        <p>Pollution Visualization</p>
+      </div>
+      <div class="feature">
+        <img src="tree.jpg" alt="Tree Plantation Need" />
+        <p>Tree Plantation Need</p>
+      </div>
+      <div class="feature">
+        <img src="oxygen.jpg" alt="Oxygen Supply vs Requirement" />
+        <p>Oxygen Supply vs Requirement</p>
+      </div>
+      <div class="feature">
+        <img src="river.jpg" alt="River & Groundwater Depletion" />
+        <p>River & Groundwater Depletion</p>
+      </div>
+      <div class="feature">
+        <img src="soil.jpg" alt="Soil Health & Degradation Mapping" />
+        <p>Soil Health & Degradation Mapping</p>
+      </div>
+      <div class="feature">
+        <img src="smart city.jpg" alt="Smart City Planning Overlay" />
+        <p>Smart City Planning Overlay</p>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
